@@ -6,7 +6,7 @@ const RadioButton = (props) => {
    const selectedRadioValue= options.filter((items)=>{return event.target.value=== items.package.name});
     props.setSelectedValue(selectedRadioValue[0]);
   };
-  const atLocal = props.localData.map(el=>(el.fav.package.name))
+  const atLocal = ( props.localData==null)?[]:props.localData.map(el=>(el.fav.package.name))
   return (
     <>
       <div
