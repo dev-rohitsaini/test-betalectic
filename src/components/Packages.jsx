@@ -12,7 +12,7 @@ const Packages = () => {
   
 
     }
-  if (packageValue.length == 0) {
+  if (packageValue == null) {
     return (
       <>
         Add new package tehre are no packages present in list
