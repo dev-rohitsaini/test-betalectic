@@ -9,8 +9,6 @@ const Packages = () => {
       localStorage.removeItem('data');
       localStorage.setItem('data', JSON.stringify(rest));
       setPackageValue(JSON.parse(localStorage.getItem('data')) || null);
-  
-
     }
   if (packageValue == null) {
     return (

@@ -33,18 +33,19 @@ const AddPackage = (props) => {
       alert("Please add description");
       return;
     }
-    if (!data) {
-      setData([{
+    var res=null;
+    if (data==null) {
+    res=([{
         fav:selectedValue,
         des:textValue
       }]);
     } else {
-      setData([...data, {  fav:selectedValue,
+      res=([...data, {  fav:selectedValue,
         des:textValue
       }]);
     }
     localStorage.removeItem('data');
-    localStorage.setItem('data', JSON.stringify(data));
+    localStorage.setItem('data', JSON.stringify(res));
       navigate('/');
   
   };
