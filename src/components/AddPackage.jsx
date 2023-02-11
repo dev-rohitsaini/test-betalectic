@@ -44,7 +44,6 @@ const AddPackage = (props) => {
         des:textValue
       }]);
     }
-    localStorage.removeItem('data');
     localStorage.setItem('data', JSON.stringify(res));
       navigate('/');
   
